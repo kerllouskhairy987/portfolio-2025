@@ -8,8 +8,11 @@ const nextConfig: NextConfig = {
         hostname: '**',
       },
     ],
-  }
+  },
   /* config options here */
+  experimental: {
+    globalNotFound: true,
+  },
 };
 
 export default nextConfig;

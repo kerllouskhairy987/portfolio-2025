@@ -161,4 +161,8 @@
     @apply bg-background text-foreground;
     /* letter-spacing: var(--tracking-normal); */
   }
+
+  .container {
+    @apply container mx-auto px-4;
+  }
 }

@@ -1,0 +1,27 @@
+{
+    "social": {
+        "linkedin": "Linkedin",
+        "github": "Github",
+        "vercel": "Vercel",
+        "hireMe": "Hire Me",
+        "whatsapp": "WhatsApp",
+        "callMe": "Call Me"
+    },
+    "bottomHeader": {
+        "actions": "Actions",
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "contact": "Contact"
+    },
+    "mainHomeSec": {
+        "welcome": "Hello, I am",
+        "myName": "Kerolos Khairy",
+        "myJob": "Frontend Engineer",
+        "desc": "I specialize in building scalable systems, web applications, dynamic websites, and landing pages using React.js OR Next.js and modern front-end technologies.",
+        "cv": "View CV",
+        "projects": "View Projects"
+    }
+}
