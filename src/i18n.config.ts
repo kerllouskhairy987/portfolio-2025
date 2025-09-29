@@ -1,4 +1,4 @@
-import { Languages } from "./types";
+import { Languages } from "@/types";
 
 export type LanguageType = Languages.ARABIC | Languages.ENGLISH;
 

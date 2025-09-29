@@ -1,7 +1,7 @@
 import '../app/[locale]/globals.css'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
-import NotFoundRoute from '@/components/ui/NotFoundRoute'
+import NotFoundRoute from '@/src/components/ui/NotFoundRoute'
 
 const inter = Inter({ subsets: ['latin'] })
 

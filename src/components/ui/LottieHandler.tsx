@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "lottie-react";
-import ErrorLottie from "../../public/assets/ErrorLottie.json"
+import ErrorLottie from "../../../public/assets/ErrorLottie.json"
 
 const lottieFilesWord = {
     ErrorLottie

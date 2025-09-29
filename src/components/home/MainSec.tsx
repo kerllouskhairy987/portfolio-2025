@@ -1,14 +1,15 @@
-"use client";
-
 import Image from "next/image";
 import TextType from "../reactBits/TextTypeBits";
-import { buttonVariants } from "../ui/button";
-import { TTranslations } from "@/types/translations";
+import { getCurrentLocale } from "@/src/lib/getCurrentLocale";
+import getTrans from "@/src/lib/translation";
+import CvAndProjects from "./clientComponents/CvAndProjects";
 
-const MainSec = ({ translations }: { translations: TTranslations }) => {
+const MainSec = async () => {
+    const locale = await getCurrentLocale();
+    const translations = await getTrans(locale);
     return (
-        <main className="min-h-screen" id="home">
-            <div className="container pt-8 md:pt-14 flex md:justify-center flex-col md:flex-row items-center gap-10">
+        <main className="container section-gap" id="home">
+            <div className="flex md:justify-center flex-col md:flex-row items-center gap-10">
                 <div className="flex flex-col gap-5 max-w-[500px] order-2 md:order-1">
                     <div>
                         <h2 className="text-xl opacity-70 font-bold">{translations.mainHomeSec.welcome}</h2>
@@ -25,13 +26,10 @@ const MainSec = ({ translations }: { translations: TTranslations }) => {
 
                     <p className="opacity-70">{translations.mainHomeSec.desc}</p>
 
-                    <div className="flex items-center gap-3">
-                        <a href="https://drive.google.com/file/d/1SuqgBWIVr0LtM4PxNGpECTE47l30o_GZ/view?usp=sharing" target="_blank" className={buttonVariants({ variant: "outline", size: "lg" })} title="View CV">{translations.mainHomeSec.cv}</a>
-                        <a href="#projects" className={buttonVariants({ variant: "default", size: "lg" })} title="View Projects">{translations.mainHomeSec.projects}</a>
-                    </div>
+                    <CvAndProjects translations={translations} />
                 </div>
                 <div className="order-1 md:order-2">
-                    <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px]  lg:h-[500px] mx-auto">
+                    <div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] lg:w-[500px]  lg:h-[500px] mx-auto">
                         <Image
                             src={"/assets/kero.jpg"}
                             alt="Kero Image"

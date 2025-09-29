@@ -1,10 +1,14 @@
-"use client";
+// "use client";
 
 import { AboutIcon, ActionIcon, CallIcon, CertificateIcon, GithubIcon, HireMeIcon, HomeIcon, LinkedInIcon, ProjectsIcon, SkillsIcon, VercelIcon, WhatsAppIcon } from "@/SVG/Icons";
 import Setting from "../ui/Setting";
 import { TTranslations } from "@/types/translations";
+import { getCurrentLocale } from "@/src/lib/getCurrentLocale";
+import getTrans from "@/src/lib/translation";
 
-const TopHeader = ({ translations }: { translations: TTranslations }) => {
+const TopHeader = async () => {
+    const locale = await getCurrentLocale();
+    const translations = await getTrans(locale);
     const navActions = [
         {
             title: translations.social.linkedin,
@@ -59,39 +63,41 @@ const TopHeader = ({ translations }: { translations: TTranslations }) => {
     )
 }
 
-const BottomHeader = ({ translations }: { translations: TTranslations }) => {
+const BottomHeader = async () => {
+    const locale = await getCurrentLocale();
+    const translations = await getTrans(locale);
     const navLinks = [
-    {
-        title: translations.bottomHeader.actions,
-        id: "actions",
-        component: <ActionIcon />,
-    },
-    {
-        title: translations.bottomHeader.home,
-        id: "home",
-        component: <HomeIcon />,
-    },
-    {
-        title: translations.bottomHeader.about,
-        id: "about",
-        component: <AboutIcon />,
-    },
-    {
-        title: translations.bottomHeader.skills,
-        id: "skills",
-        component: <SkillsIcon />,
-    },
-    {
-        title: translations.bottomHeader.projects,
-        id: "projects",
-        component: <ProjectsIcon />,
-    },
-    {
-        title: translations.bottomHeader.certificates,
-        id: "certificates",
-        component: <CertificateIcon />,
-    }
-]
+        {
+            title: translations.bottomHeader.actions,
+            id: "actions",
+            component: <ActionIcon />,
+        },
+        {
+            title: translations.bottomHeader.home,
+            id: "home",
+            component: <HomeIcon />,
+        },
+        {
+            title: translations.bottomHeader.about,
+            id: "about",
+            component: <AboutIcon />,
+        },
+        {
+            title: translations.bottomHeader.skills,
+            id: "skills",
+            component: <SkillsIcon />,
+        },
+        {
+            title: translations.bottomHeader.projects,
+            id: "projects",
+            component: <ProjectsIcon />,
+        },
+        {
+            title: translations.bottomHeader.certificates,
+            id: "certificates",
+            component: <CertificateIcon />,
+        }
+    ]
 
     return (
         <div className="fixed bottom-0 sm:bottom-5 left-1/2 -translate-x-1/2 rounded-md px-4 py-1 w-fit flex justify-center backdrop-blur-sm bg-sidebar-accent/70">

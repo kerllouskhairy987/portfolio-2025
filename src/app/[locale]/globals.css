@@ -158,11 +158,18 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    /* letter-spacing: var(--tracking-normal); */
+    @apply bg-background text-foreground pb-[70px] sm:pb-0;
   }
 
   .container {
-    @apply container mx-auto px-4;
+    @apply container mx-auto px-4 md:px-8 lg:px-16 xl:px-32;
+  }
+
+  .section-gap {
+    @apply py-10 md:py-16;
+  }
+
+  .section-inner-gap {
+    @apply py-4 md:py-8;
   }
 }

@@ -1,0 +1,57 @@
+{
+    "social": {
+        "linkedin": "Linkedin",
+        "github": "Github",
+        "vercel": "Vercel",
+        "hireMe": "Hire Me",
+        "whatsapp": "WhatsApp",
+        "callMe": "Call Me"
+    },
+    "bottomHeader": {
+        "actions": "Actions",
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "contact": "Contact"
+    },
+    "mainHomeSec": {
+        "welcome": "Hello, I am",
+        "myName": "Kerolos Khairy",
+        "myJob": "Frontend Engineer",
+        "desc": "I specialize in building scalable systems, web applications, dynamic websites, and landing pages using React.js OR Next.js and modern front-end technologies.",
+        "cv": "View CV",
+        "projects": "View Projects"
+    },
+    "aboutSec": {
+        "title": "About Me",
+        "whoIam": {
+            "title": "Who Am I",
+            "descOne": "I am a passionate software engineer specializing in front-end web development using React.js and Next.js. With a strong foundation in engineering principles and modern web technologies, I build scalable, responsive, and user-friendly applications.",
+            "descTwo": "My approach combines technical expertise with a keen eye for design, ensuring that the applications I build are not only functional but also deliver exceptional user experiences.",
+            "descThree": "Through continuous learning and collaboration, I strive to bring innovative solutions to life, contributing to the growth and success of the applications I work on.",
+            "descFour": "With a strong commitment to quality and a passion for innovation, I am committed to delivering exceptional results that meet the needs of users and stakeholders.",
+            "descFive": "Let's work together to create exceptional software solutions that drive business success."
+        },
+        "education": {
+            "title": "Education",
+            "one": "A student in the final year of the College of Engineering, Computer Science",
+            "timeOne": "2021-2026",
+            "two": "DEPI (Digital Egypt Pioneers Initiative)",
+            "timeTwo": "6 months"
+        }
+    },
+    "skills": {
+        "title": "My Skills",
+        "topDesc": "Here are the technologies and tools I work with to build modern web applications.",
+        "bottomDesc": "I'm continuously learning and expanding my skillset to stay updated with the latest technologies.",
+        "department": {
+            "frontend": "Frontend Development",
+            "backend": "Backend",
+            "style": "Styling & UI",
+            "state": "State Management",
+            "tools": "Tools & Others"
+        }
+    }
+}
